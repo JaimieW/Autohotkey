@@ -1,2 +1,2 @@
 # Enter script code
-keyboard.send_key("<f7>")
+keyboard.send_keys("<shift>+<f11>")

@@ -1,2 +1,2 @@
 # Enter script code
-keyboard.send_key("<f5>")
+keyboard.send_keys("<f11>")
