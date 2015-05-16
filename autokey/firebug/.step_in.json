@@ -1,5 +1,5 @@
 {
-    "usageCount": 3, 
+    "usageCount": 0, 
     "omitTrigger": false, 
     "prompt": false, 
     "description": "step_in", 
@@ -22,7 +22,7 @@
     ], 
     "showInTrayMenu": false, 
     "filter": {
-        "regex": "Eclipse.Eclipse", 
+        "regex": "Navigator.Firefox", 
         "isRecursive": false
     }, 
     "type": "script", 

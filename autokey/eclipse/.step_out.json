@@ -1,5 +1,5 @@
 {
-    "usageCount": 0, 
+    "usageCount": 4, 
     "omitTrigger": false, 
     "prompt": false, 
     "description": "step_out", 
@@ -22,7 +22,7 @@
     ], 
     "showInTrayMenu": false, 
     "filter": {
-        "regex": null, 
+        "regex": "Eclipse.Eclipse", 
         "isRecursive": false
     }, 
     "type": "script", 

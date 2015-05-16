@@ -1,5 +1,5 @@
 {
-    "usageCount": 0, 
+    "usageCount": 5, 
     "omitTrigger": false, 
     "prompt": false, 
     "description": "resume", 
@@ -20,9 +20,9 @@
     "modes": [
         3
     ], 
-    "showInTrayMenu": false, 
+    "showInTrayMenu": true, 
     "filter": {
-        "regex": null, 
+        "regex": "Eclipse.Eclipse", 
         "isRecursive": false
     }, 
     "type": "script", 
