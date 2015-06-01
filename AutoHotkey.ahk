@@ -52,6 +52,14 @@ return
 <^>!4:: Send {F8}
 #IfWinActive
 
+;stepping instructions for eclipse on linux vm
+#IfWinActive  ahk_class QWidget
+<^>!1:: Send {F5}
+<^>!2:: Send {F6}
+<^>!3:: Send {F7}
+<^>!4:: Send {F8}
+#IfWinActive
+
 ;stepping instructions for firebug
 #IfWinActive Firebug
 <^>!1:: Send {F11}
