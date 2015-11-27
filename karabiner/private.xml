@@ -1,0 +1,125 @@
+<?xml version="1.0"?>
+<root>
+    <item>
+        <name>Terminal Home Shortcut</name>
+        <identifier>private.term_home</identifier>
+        <only>TERMINAL</only>
+        <autogen>
+            __KeyToKey__
+            KeyCode::BRACKET_LEFT, ModifierFlag::OPTION_R,
+            KeyCode::A, ModifierFlag::CONTROL_L
+        </autogen>
+    </item>
+    
+    <item>
+        <name>Terminal End Shortcut</name>
+        <identifier>private.term_end</identifier>
+        <only>TERMINAL</only>
+        <autogen>
+            __KeyToKey__
+            KeyCode::BRACKET_RIGHT, ModifierFlag::OPTION_R,
+            KeyCode::E, ModifierFlag::CONTROL_L
+        </autogen>
+    </item>
+    
+    <item>
+        <name>Home Shortcut</name>
+        <identifier>private.home</identifier>
+        <not>TERMINAL</not>
+        <autogen>
+            __KeyToKey__
+            KeyCode::BRACKET_LEFT, ModifierFlag::OPTION_R,
+            KeyCode::CURSOR_LEFT, ModifierFlag::COMMAND_L
+        </autogen>
+    </item>
+    
+    <item>
+        <name>End Shortcut</name>
+        <identifier>private.end</identifier>
+        <not>TERMINAL</not>
+        <autogen>
+            __KeyToKey__
+            KeyCode::BRACKET_RIGHT, ModifierFlag::OPTION_R,
+            KeyCode::CURSOR_RIGHT, ModifierFlag::COMMAND_L
+        </autogen>
+    </item>
+
+<item>
+    <name>Home Select</name>
+    <identifier>private.home_select</identifier>
+    <not>TERMINAL</not>
+    <autogen>
+        __KeyToKey__
+        KeyCode::BRACKET_LEFT, ModifierFlag::OPTION_R | ModifierFlag::SHIFT_L,
+        KeyCode::CURSOR_LEFT, ModifierFlag::COMMAND_L | ModifierFlag::SHIFT_L
+    </autogen>
+</item>
+
+
+<item>
+    <name>End Select</name>
+    <identifier>private.end_select</identifier>
+    <not>TERMINAL</not>
+    <autogen>
+        __KeyToKey__
+        KeyCode::BRACKET_RIGHT, ModifierFlag::OPTION_R | ModifierFlag::SHIFT_L,
+        KeyCode::CURSOR_RIGHT, ModifierFlag::COMMAND_L | ModifierFlag::SHIFT_L
+    </autogen>
+</item>
+
+<item>
+    <name>Split left</name>
+    <identifier>private.split_left</identifier>
+    <not>TERMINAL</not>
+    <autogen>
+        __KeyToKey__
+        KeyCode::CURSOR_LEFT, ModifierFlag::CONTROL_L,
+        KeyCode::CURSOR_LEFT, ModifierFlag::COMMAND_L | ModifierFlag::OPTION_L | ModifierFlag::CONTROL_L
+    </autogen>
+</item>
+
+<item>
+    <name>Split right</name>
+    <identifier>private.split_right</identifier>
+    <not>TERMINAL</not>
+    <autogen>
+        __KeyToKey__
+        KeyCode::CURSOR_RIGHT, ModifierFlag::CONTROL_L,
+        KeyCode::CURSOR_RIGHT, ModifierFlag::COMMAND_L | ModifierFlag::OPTION_L | ModifierFlag::CONTROL_L
+    </autogen>
+</item>
+
+
+<item>
+    <name>Maximise</name>
+    <identifier>private.maximise</identifier>
+    <not>TERMINAL</not>
+    <autogen>
+        __KeyToKey__
+        KeyCode::CURSOR_UP, ModifierFlag::CONTROL_L,
+        KeyCode::M, ModifierFlag::COMMAND_L | ModifierFlag::OPTION_L | ModifierFlag::CONTROL_L
+    </autogen>
+</item>
+
+
+<item>
+    <name>Back Word</name>
+    <identifier>private.back_word</identifier>
+    <autogen>
+        __KeyToKey__
+        KeyCode::CURSOR_LEFT, ModifierFlag::COMMAND_L,
+        KeyCode::CURSOR_LEFT, ModifierFlag::OPTION_L
+    </autogen>
+</item>
+
+<item>
+    <name>Forward Word</name>
+    <identifier>private.forward_word</identifier>
+    <autogen>
+        __KeyToKey__
+        KeyCode::CURSOR_RIGHT, ModifierFlag::COMMAND_L,
+        KeyCode::CURSOR_RIGHT, ModifierFlag::OPTION_L
+    </autogen>
+</item>
+
+</root>
