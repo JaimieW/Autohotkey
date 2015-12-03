@@ -70,7 +70,6 @@
 <item>
     <name>Split left</name>
     <identifier>private.split_left</identifier>
-    <not>TERMINAL</not>
     <autogen>
         __KeyToKey__
         KeyCode::CURSOR_LEFT, ModifierFlag::CONTROL_L,
@@ -81,7 +80,6 @@
 <item>
     <name>Split right</name>
     <identifier>private.split_right</identifier>
-    <not>TERMINAL</not>
     <autogen>
         __KeyToKey__
         KeyCode::CURSOR_RIGHT, ModifierFlag::CONTROL_L,
@@ -93,7 +91,6 @@
 <item>
     <name>Maximise</name>
     <identifier>private.maximise</identifier>
-    <not>TERMINAL</not>
     <autogen>
         __KeyToKey__
         KeyCode::CURSOR_UP, ModifierFlag::CONTROL_L,
@@ -103,6 +100,47 @@
 
 
 <item>
+    <name>lock screen</name>
+    <identifier>private.lock_screen</identifier>
+    <autogen>
+        __KeyToKey__
+        KeyCode::L, ModifierFlag::CONTROL_L,
+        ConsumerKeyCode::EJECT, ModifierFlag::CONTROL_L | ModifierFlag::SHIFT_L
+    </autogen>
+</item>
+
+
+<item>
+    <name>open finder</name>
+    <identifier>private.open_finder</identifier>
+    <autogen>
+        __KeyToKey__
+        KeyCode::E, ModifierFlag::CONTROL_L,
+        KeyCode::E, ModifierFlag::OPTION_L | ModifierFlag::COMMAND_L
+    </autogen>
+</item>
+
+<item>
+    <name>alt tab</name>
+    <identifier>private.alt_tab</identifier>
+    <autogen>
+        __KeyToKey__
+        KeyCode::TAB, ModifierFlag::OPTION_L,
+        KeyCode::TAB, ModifierFlag::COMMAND_L
+    </autogen>
+</item>
+
+<item>
+    <name>alt shift tab</name>
+    <identifier>private.alt_shift_tab</identifier>
+    <autogen>
+        __KeyToKey__
+        KeyCode::TAB, ModifierFlag::OPTION_L | ModifierFlag::SHIFT_L,
+        KeyCode::TAB, ModifierFlag::COMMAND_L| ModifierFlag::SHIFT_L
+    </autogen>
+</item>
+
+<!--item>
     <name>Back Word</name>
     <identifier>private.back_word</identifier>
     <autogen>
@@ -120,6 +158,6 @@
         KeyCode::CURSOR_RIGHT, ModifierFlag::COMMAND_L,
         KeyCode::CURSOR_RIGHT, ModifierFlag::OPTION_L
     </autogen>
-</item>
+</item-->
 
 </root>
