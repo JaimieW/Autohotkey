@@ -6,7 +6,7 @@
         <only>TERMINAL</only>
         <autogen>
             __KeyToKey__
-            KeyCode::BRACKET_LEFT, ModifierFlag::OPTION_R,
+            KeyCode::BRACKET_LEFT, ModifierFlag::OPTION_L,
             KeyCode::A, ModifierFlag::CONTROL_L
         </autogen>
     </item>
@@ -17,7 +17,7 @@
         <only>TERMINAL</only>
         <autogen>
             __KeyToKey__
-            KeyCode::BRACKET_RIGHT, ModifierFlag::OPTION_R,
+            KeyCode::BRACKET_RIGHT, ModifierFlag::OPTION_L,
             KeyCode::E, ModifierFlag::CONTROL_L
         </autogen>
     </item>
@@ -28,7 +28,7 @@
         <not>TERMINAL</not>
         <autogen>
             __KeyToKey__
-            KeyCode::BRACKET_LEFT, ModifierFlag::OPTION_R,
+            KeyCode::BRACKET_LEFT, ModifierFlag::OPTION_L,
             KeyCode::CURSOR_LEFT, ModifierFlag::COMMAND_L
         </autogen>
     </item>
@@ -39,7 +39,7 @@
         <not>TERMINAL</not>
         <autogen>
             __KeyToKey__
-            KeyCode::BRACKET_RIGHT, ModifierFlag::OPTION_R,
+            KeyCode::BRACKET_RIGHT, ModifierFlag::OPTION_L,
             KeyCode::CURSOR_RIGHT, ModifierFlag::COMMAND_L
         </autogen>
     </item>
@@ -104,8 +104,8 @@
     <identifier>private.lock_screen</identifier>
     <autogen>
         __KeyToKey__
-        KeyCode::L, ModifierFlag::CONTROL_L,
-        ConsumerKeyCode::EJECT, ModifierFlag::CONTROL_L | ModifierFlag::SHIFT_L
+        KeyCode::L, ModifierFlag::CONTROL_L| ModifierFlag::OPTION_L,
+        ConsumerKeyCode::POWER, ModifierFlag::CONTROL_L | ModifierFlag::SHIFT_L
     </autogen>
 </item>
 
@@ -137,6 +137,49 @@
         __KeyToKey__
         KeyCode::TAB, ModifierFlag::OPTION_L | ModifierFlag::SHIFT_L,
         KeyCode::TAB, ModifierFlag::COMMAND_L| ModifierFlag::SHIFT_L
+    </autogen>
+</item>
+
+
+<!-- eclipse debug shortcuts -->
+<item>
+    <name>eclipse step in </name>
+    <identifier>private.eclipse_in</identifier>
+    <only>ECLIPSE</only>
+    <autogen>
+        __KeyToKey__
+        KeyCode::KEY_1, ModifierFlag::OPTION_R,
+        KeyCode::F5
+    </autogen>
+</item>
+<item>
+    <name>eclipse step over </name>
+    <identifier>private.eclipse_over</identifier>
+    <only>ECLIPSE</only>
+    <autogen>
+        __KeyToKey__
+        KeyCode::KEY_2, ModifierFlag::OPTION_R,
+        KeyCode::F6
+    </autogen>
+</item>
+<item>
+    <name>eclipse step out </name>
+    <identifier>private.eclipse_out</identifier>
+    <only>ECLIPSE</only>
+    <autogen>
+        __KeyToKey__
+        KeyCode::KEY_3, ModifierFlag::OPTION_R,
+        KeyCode::F7
+    </autogen>
+</item>
+<item>
+    <name>eclipse run </name>
+    <identifier>private.eclipse_run</identifier>
+    <only>ECLIPSE</only>
+    <autogen>
+        __KeyToKey__
+        KeyCode::KEY_4, ModifierFlag::OPTION_R,
+        KeyCode::F8
     </autogen>
 </item>
 
